@@ -14,7 +14,7 @@ export default function HomeScreen() {
             <Text className="text-xl dark:text-white mr-2">Toggle Theme</Text>
             <Switch value={colorScheme==='dark'} onChange={toggleColorScheme}></Switch>
         </View>
-        <View className="w-screen">
+        <View className="w-screen flex flex-col justify-center items-center space-x-2">
             <Text className="text-black text-6xl font-bold m-auto mt-10 dark:text-white">Counter</Text>
             <Text className="text-red-600 font-bold text-6xl my-10 m-auto">
                 {count}
